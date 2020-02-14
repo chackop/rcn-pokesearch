@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, ImageBackground, StyleSheet } from 'react-native';
 import { Button } from 'native-base';
 
 let myBackground = require('../assets/icons/landing.jpg');
@@ -7,7 +7,7 @@ let myBackground = require('../assets/icons/landing.jpg');
 const Landing = ({ switchScreen }) => {
     return (
         <View>
-            <Image source={myBackground}>
+            <ImageBackground source={myBackground}>
                 <View style={styles.viewStyle}>
                     <Text
                         style={styles.titleStyle}
@@ -20,7 +20,7 @@ const Landing = ({ switchScreen }) => {
                         <Text style={styles.buttonText}>Start Searching</Text>
                     </Button>
                 </View>
-            </Image>
+            </ImageBackground>
         </View>
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScrollView, Text, Image, View, Dimensions, StyleSheet } from 'react-native';
+import { ScrollView, Text, Image, ImageBackground, View, Dimensions, StyleSheet } from 'react-native';
 import { ListItem, List } from 'native-base';
 
 let height = Dimensions.get('window').height;
@@ -12,7 +12,7 @@ const SearchBody = ({ data }) => {
     }
 
     return (
-        <Image
+        <ImageBackground
             style={styles.backgroundImage}
             source={{ uri: "http://pokemongolive.com/img/posts/raids_loading.png" }}
         >
@@ -48,7 +48,7 @@ const SearchBody = ({ data }) => {
                     </List>
                 </View>
             </ScrollView>
-        </Image>
+        </ImageBackground>
     )
 }
 
