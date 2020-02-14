@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, Platform, Image } from 'react-native';
+import Landing from './src/Landing';
+import Search from './src/Search';
 
 export default function App() {
 
@@ -25,7 +27,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       {renderScreen()}
-    </View>
+    </View>)
 }
 
 const styles = StyleSheet.create({
